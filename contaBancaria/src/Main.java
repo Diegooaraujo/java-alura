@@ -8,11 +8,8 @@ public class Main {
         String conta = "Corrente";
         double saldo = 9999999.99;
         int opcao=0;
+        boolean logado = true;
 
-        System.out.println("******************************");
-        System.out.println("Nome do Cliente: "+nome) ;
-        System.out.println("Saldo Atual: "+saldo);
-        System.out.println("******************************");
 
         String menu = """
                 ** Digite sua opção **
@@ -23,12 +20,24 @@ public class Main {
                 
                 """;
         Scanner leitura = new Scanner(System.in);
+        while(logado){
+            System.out.println("Digite o nome da Conta:");
+            String NomeConta = leitura.nextLine();
+            if(NomeConta.equals("diego")){
+                System.out.println("Digite a senha:");
+                String senha = leitura.nextLine();
+                if(senha.equals("diegoa")){
+                    logado =false;
+                }
+            }
+        }
+
         while(opcao !=4){
             System.out.println(menu);
             opcao = leitura.nextInt();
 
             if (opcao == 1) {
-                System.out.println("O saldo atualizado é:"+ saldo );
+                System.out.println("O saldo atualizado é de R$"+ saldo );
             }else if(opcao ==2){
                 System.out.println("qual o valor que deseja transferir:");
                 double valor = leitura.nextDouble();
