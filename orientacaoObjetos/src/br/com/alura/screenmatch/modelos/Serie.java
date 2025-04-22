@@ -1,54 +1,46 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Serie extends Titulo{
+public class Serie extends Titulo {
     private int temporadas;
-    private boolean atiava;
-    private int epsodiosPorTemporada;
-    private int minutosPorTemporadas;
-    private int minutosPorEpsodios;
+    private boolean ativa;
+    private int episodiosPorTemporada;
+    private int minutosPorEpisodio;
 
-    public void setMinutosPorEpsodios(int minutosPorEpsodios) {
-        this.minutosPorEpsodios = minutosPorEpsodios;
-    }
-
-    public int getMinutosPorEpsodios() {
-        return minutosPorEpsodios;
+    public int getTemporadas() {
+        return temporadas;
     }
 
     public void setTemporadas(int temporadas) {
         this.temporadas = temporadas;
     }
 
-    public void setAtiava(boolean atiava) {
-        this.atiava = atiava;
+    public boolean isAtiva() {
+        return ativa;
     }
 
-    public void setEpsodiosPorTemporada(int epsodiosPorTemporada) {
-        this.epsodiosPorTemporada = epsodiosPorTemporada;
+    public void setAtiva(boolean ativa) {
+        this.ativa = ativa;
     }
 
-    public void setMinutosPorTemporadas(int minutosPorTemporadas) {
-        this.minutosPorTemporadas = minutosPorTemporadas;
+    public int getEpisodiosPorTemporada() {
+        return episodiosPorTemporada;
     }
 
-    public int getTemporadas() {
-        return temporadas;
+    public void setEpisodiosPorTemporada(int episodiosPorTemporada) {
+        this.episodiosPorTemporada = episodiosPorTemporada;
     }
 
-    public boolean isAtiava() {
-        return atiava;
+    public int getMinutosPorEpisodio() {
+        return minutosPorEpisodio;
     }
 
-    public int getEpsodiosPorTemporada() {
-        return epsodiosPorTemporada;
-    }
-
-    public int getMinutosPorTemporadas() {
-        return minutosPorTemporadas;
+    public void setMinutosPorEpisodio(int minutosPorEpisodio) {
+        this.minutosPorEpisodio = minutosPorEpisodio;
     }
 
     @Override
     public int getDuracaoEmMinutos() {
-        return temporadas * epsodiosPorTemporada* minutosPorTemporadas;
+        return temporadas * episodiosPorTemporada * minutosPorEpisodio;
     }
 }
+
