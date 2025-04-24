@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/contaBancaria/contaBancaria.iml" filepath="$PROJECT_DIR$/contaBancaria/contaBancaria.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java-alura.iml" filepath="$PROJECT_DIR$/.idea/java-alura.iml" />
+      <module fileurl="file://$PROJECT_DIR$/musicas/musicas.iml" filepath="$PROJECT_DIR$/musicas/musicas.iml" />
       <module fileurl="file://$PROJECT_DIR$/orientacaoObjetos/orientacaoObjetos.iml" filepath="$PROJECT_DIR$/orientacaoObjetos/orientacaoObjetos.iml" />
       <module fileurl="file://$PROJECT_DIR$/primeiraClasse/primeiraClasse.iml" filepath="$PROJECT_DIR$/primeiraClasse/primeiraClasse.iml" />
       <module fileurl="file://$PROJECT_DIR$/primeiro/primeiro.iml" filepath="$PROJECT_DIR$/primeiro/primeiro.iml" />
